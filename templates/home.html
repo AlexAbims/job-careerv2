@@ -22,7 +22,7 @@
   <div class="container">
   <h3 class="text-center mt-2 mb-2">
     {{company_name}} Job Career</h3>
- <img class="img-fluid" id="banner" src="https://job-career.alexabims.repl.co/static/banner.png" alt="banner" > 
+ <img class="img-fluid" id="banner" src="https://job-careerv2.alexabims.repl.co/static/banner.png" alt="banner" > 
   <h2 class="text-center mt-2 mb-4">About Us</h2>
   <div class="row" style=margin-bottom:16px">
     <div class="col-6">
@@ -32,12 +32,12 @@
       </div>
     <div class="col-3">
     
-  <img id="people" src="https://job-career.alexabims.repl.co/static/people.jpg" alt="people" style="height:300px;border-radius:5px" > 
+  <img id="people" src="https://job-careerv2.alexabims.repl.co/static/people.jpg" alt="people" style="height:300px;border-radius:5px" > 
   </div>
     </div>
   <h3 class="text-center mt-2 mb-2">Job Openings</h3>
     <div>
-      {% for job in jobs%}
+      {% for job in jobs_list%}
       {% include('jobitem.html')%}
     
       {%endfor%}
